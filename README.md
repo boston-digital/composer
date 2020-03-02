@@ -1,6 +1,7 @@
 # Boston Digital Composer repository
--
+
 To use this repository, add the following to your global composer.json:
+
 ```json
 {
   "repositories": [
@@ -11,6 +12,7 @@ To use this repository, add the following to your global composer.json:
   ]
 }
 ```
+
 Head over to [https://boston-digital.github.io/composer/]() to browse available packages.
 
 NOTE: actual composer repository is on [gh-pages](https://www.github.com/boston-digital/composer/tree/gh-pages) branch.
