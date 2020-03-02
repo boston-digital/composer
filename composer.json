@@ -1,0 +1,9 @@
+{
+  "name": "boston-digital/composer",
+  "license": "proprietary",
+  "description": "Boston Digital Composer repository",
+  "homepage": "https://boston-digital.github.io/composer/",
+  "require": {
+    "composer/satis": "dev-master#b2f76df as 1.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "boston-digital",
+  "description": "Boston Digital Composer repository",
+  "homepage": "https://boston-digital.github.io/composer/",
+  "include-filename": "all.json",
+  "repositories": [
+    {
+      "packagist.org": false
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/boston-digital/wp-advanced-custom-fields-pro"
+    }
+  ]
+}
