@@ -168,8 +168,6 @@ mirror ()
     exit
   fi
 
-  exit
-
   if ! file_exists "$acf_filepath"; then
     echo "Downloading ACF version $version..."
     curl --output "$acf_filepath" "$acf_endpoint" --silent
