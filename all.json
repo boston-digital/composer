@@ -1,5 +1,208 @@
 {
     "packages": {
+        "boston-digital/drupal-project": {
+            "8.8.4": {
+                "name": "boston-digital/drupal-project",
+                "version": "8.8.4",
+                "version_normalized": "8.8.4.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:boston-digital/drupal-project.git",
+                    "reference": "d80980534b193357f76a7c2478d44b9a8aa0968d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/boston-digital/drupal-project/zipball/d80980534b193357f76a7c2478d44b9a8aa0968d",
+                    "reference": "d80980534b193357f76a7c2478d44b9a8aa0968d",
+                    "shasum": ""
+                },
+                "require": {
+                    "drupal/core-composer-scaffold": "^8.8",
+                    "drupal/core-recommended": "^8.8"
+                },
+                "conflict": {
+                    "drupal/drupal": "*"
+                },
+                "time": "2020-03-25T21:14:19+00:00",
+                "type": "project",
+                "extra": {
+                    "drupal-scaffold": {
+                        "locations": {
+                            "web-root": "web/"
+                        }
+                    },
+                    "installer-paths": {
+                        "web/core": [
+                            "type:drupal-core"
+                        ],
+                        "web/libraries/{$name}": [
+                            "type:drupal-library"
+                        ],
+                        "web/modules/contrib/{$name}": [
+                            "type:drupal-module"
+                        ],
+                        "web/profiles/contrib/{$name}": [
+                            "type:drupal-profile"
+                        ],
+                        "web/themes/contrib/{$name}": [
+                            "type:drupal-theme"
+                        ],
+                        "drush/Commands/contrib/{$name}": [
+                            "type:drupal-drush"
+                        ],
+                        "web/modules/custom/{$name}": [
+                            "type:drupal-custom-module"
+                        ],
+                        "web/themes/custom/{$name}": [
+                            "type:drupal-custom-theme"
+                        ]
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Project template for Drupal 8 projects.",
+                "homepage": "https://www.github.com/boston-digital/drupal-project",
+                "support": {
+                    "source": "https://github.com/boston-digital/drupal-project/tree/8.8.4",
+                    "issues": "https://github.com/boston-digital/drupal-project/issues"
+                }
+            },
+            "8.8.x-dev": {
+                "name": "boston-digital/drupal-project",
+                "version": "8.8.x-dev",
+                "version_normalized": "8.8.9999999.9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:boston-digital/drupal-project.git",
+                    "reference": "d80980534b193357f76a7c2478d44b9a8aa0968d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/boston-digital/drupal-project/zipball/d80980534b193357f76a7c2478d44b9a8aa0968d",
+                    "reference": "d80980534b193357f76a7c2478d44b9a8aa0968d",
+                    "shasum": ""
+                },
+                "require": {
+                    "drupal/core-composer-scaffold": "^8.8",
+                    "drupal/core-recommended": "^8.8"
+                },
+                "conflict": {
+                    "drupal/drupal": "*"
+                },
+                "time": "2020-03-25T21:14:19+00:00",
+                "type": "project",
+                "extra": {
+                    "drupal-scaffold": {
+                        "locations": {
+                            "web-root": "web/"
+                        }
+                    },
+                    "installer-paths": {
+                        "web/core": [
+                            "type:drupal-core"
+                        ],
+                        "web/libraries/{$name}": [
+                            "type:drupal-library"
+                        ],
+                        "web/modules/contrib/{$name}": [
+                            "type:drupal-module"
+                        ],
+                        "web/profiles/contrib/{$name}": [
+                            "type:drupal-profile"
+                        ],
+                        "web/themes/contrib/{$name}": [
+                            "type:drupal-theme"
+                        ],
+                        "drush/Commands/contrib/{$name}": [
+                            "type:drupal-drush"
+                        ],
+                        "web/modules/custom/{$name}": [
+                            "type:drupal-custom-module"
+                        ],
+                        "web/themes/custom/{$name}": [
+                            "type:drupal-custom-theme"
+                        ]
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Project template for Drupal 8 projects.",
+                "homepage": "https://www.github.com/boston-digital/drupal-project",
+                "support": {
+                    "source": "https://github.com/boston-digital/drupal-project/tree/8.8.4",
+                    "issues": "https://github.com/boston-digital/drupal-project/issues"
+                }
+            },
+            "8.9.x-dev": {
+                "name": "boston-digital/drupal-project",
+                "version": "8.9.x-dev",
+                "version_normalized": "8.9.9999999.9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:boston-digital/drupal-project.git",
+                    "reference": "0133c2c31840ac4dea1dd859f1ac72c6e2ccc868"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/boston-digital/drupal-project/zipball/0133c2c31840ac4dea1dd859f1ac72c6e2ccc868",
+                    "reference": "0133c2c31840ac4dea1dd859f1ac72c6e2ccc868",
+                    "shasum": ""
+                },
+                "require": {
+                    "drupal/core-composer-scaffold": "^8.9",
+                    "drupal/core-recommended": "^8.9"
+                },
+                "conflict": {
+                    "drupal/drupal": "*"
+                },
+                "time": "2020-03-25T21:16:05+00:00",
+                "type": "project",
+                "extra": {
+                    "drupal-scaffold": {
+                        "locations": {
+                            "web-root": "web/"
+                        }
+                    },
+                    "installer-paths": {
+                        "web/core": [
+                            "type:drupal-core"
+                        ],
+                        "web/libraries/{$name}": [
+                            "type:drupal-library"
+                        ],
+                        "web/modules/contrib/{$name}": [
+                            "type:drupal-module"
+                        ],
+                        "web/profiles/contrib/{$name}": [
+                            "type:drupal-profile"
+                        ],
+                        "web/themes/contrib/{$name}": [
+                            "type:drupal-theme"
+                        ],
+                        "drush/Commands/contrib/{$name}": [
+                            "type:drupal-drush"
+                        ],
+                        "web/modules/custom/{$name}": [
+                            "type:drupal-custom-module"
+                        ],
+                        "web/themes/custom/{$name}": [
+                            "type:drupal-custom-theme"
+                        ]
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Project template for Drupal 8 projects.",
+                "homepage": "https://www.github.com/boston-digital/drupal-project",
+                "support": {
+                    "source": "https://github.com/boston-digital/drupal-project/tree/8.9.x",
+                    "issues": "https://github.com/boston-digital/drupal-project/issues"
+                }
+            }
+        },
         "bostoninteractive/wp-advanced-custom-fields-pro": {
             "5.7.12": {
                 "name": "bostoninteractive/wp-advanced-custom-fields-pro",
