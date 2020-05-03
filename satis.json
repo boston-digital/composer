@@ -9,11 +9,23 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/boston-digital/wp-advanced-custom-fields-pro"
+      "url": "https://github.com/boston-digital/bdt"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/boston-digital/drupal-base-theme"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/boston-digital/drupal-install-profile"
     },
     {
       "type": "vcs",
       "url": "https://github.com/boston-digital/drupal-project"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/boston-digital/wp-advanced-custom-fields-pro"
     }
   ]
 }
