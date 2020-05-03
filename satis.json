@@ -1,5 +1,5 @@
 {
-  "name": "boston-digital",
+  "name": "boston-digital/composer",
   "description": "Boston Digital Composer repository",
   "homepage": "https://boston-digital.github.io/composer/",
   "include-filename": "all.json",
@@ -13,7 +13,7 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/boston-digital/drupal-base-theme"
+      "url": "https://github.com/boston-digital/drupal-starter-theme"
     },
     {
       "type": "vcs",
