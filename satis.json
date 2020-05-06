@@ -3,6 +3,7 @@
   "description": "Boston Digital Composer repository",
   "homepage": "https://boston-digital.github.io/composer/",
   "include-filename": "all.json",
+  "require-all": true,
   "repositories": [
     {
       "packagist.org": false
@@ -13,15 +14,15 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/boston-digital/drupal-starter-theme"
-    },
-    {
-      "type": "vcs",
       "url": "https://github.com/boston-digital/drupal-install-profile"
     },
     {
       "type": "vcs",
       "url": "https://github.com/boston-digital/drupal-project"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/boston-digital/drupal-starter-theme"
     },
     {
       "type": "vcs",
