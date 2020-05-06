@@ -159,7 +159,7 @@ mirror ()
   local wp_endpoint="https://api.wordpress.org/plugins/info/1.0/advanced-custom-fields.json"
   echo "Retrieving latest ACF version from WordPress API..."
   local version="$( curl "$wp_endpoint" --silent | jq '.version' --raw-output )"
-  local acf_endpoint="https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k=${ACF_PRO_KEY}&t=${version}"
+  local acf_endpoint="https://connect.advancedcustomfields.com/v2/plugins/download?p=pro&k=${ACF_PRO_KEY}&t=${version}"
   local acf_filepath="${FILES_DIR}/advanced-custom-fields-pro.${version}.zip"
   local acf_unzip_dir="${FILES_DIR}/advanced-custom-fields-pro"
 
@@ -169,9 +169,15 @@ mirror ()
   fi
 
   if ! file_exists "$acf_filepath"; then
-    echo "Downloading ACF version $version..."
-    curl --output "$acf_filepath" "$acf_endpoint" --silent
+    echo "Downloading ACF version $version to $acf_filepath..."
+    curl --output --create-dirs --location --silent "$acf_filepath" "$acf_endpoint"
+
+    if ! file_exists "$acf_filepath"; then
+      echo "An error occurred while downloading ACF :("
+      exit 1
+    fi
   fi
+
 
   echo "Extracting zip file..."
   unzip -qq "$acf_filepath" -d "$FILES_DIR"
