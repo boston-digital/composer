@@ -1,4 +1,8 @@
-/.env
-/.idea
+##### Hidden files #####
+.*
+!/.gitignore
+
+##### Ignore generated content #####
+/advanced-custom-fields-pro
 /vendor
 /dist
