@@ -33,7 +33,7 @@ a release in our private [boston-digital/wp-advanced-custom-fields-pro](https://
 repo.
 
 ### Usage
-If you haven't already, create an `.env` file in the root of this repo with the following variables:
+If you haven't already, create an `.env` file in the root of this repo. 
 
 ```shell script
 # ACF_PRO_KEY can be found in Keeper:
@@ -44,6 +44,10 @@ GITHUB_USER=''
 # Your personal GitHub access token from https://github.com/settings/tokens
 GITHUB_TOKEN=''
 ```
+
+NOTE: Your personal access token needs the following scopes:
+
+![screenshot of access token scopes](images/personal_access_token.jpg)
 
 After you've created the `.env` file, run `scripts/acf.sh` from the root of the repo. If
 your computer is missing any required dependencies the script will fail and let you know
