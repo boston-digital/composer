@@ -6,9 +6,6 @@
   "require-all": true,
   "repositories": [
     {
-      "packagist.org": false
-    },
-    {
       "name": "boston-digital/bdt",
       "type": "vcs",
       "url": "https://github.com/boston-digital/bdt"
