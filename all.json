@@ -64,22 +64,25 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:boston-digital/drupal-install-profile.git",
-                    "reference": "eb488aa52361448d25b0a8f35b2e812b66d365ff"
+                    "reference": "39e21b0ec205b7eb58a0501b9b4c5f517d880ff2"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/boston-digital/drupal-install-profile/zipball/eb488aa52361448d25b0a8f35b2e812b66d365ff",
-                    "reference": "eb488aa52361448d25b0a8f35b2e812b66d365ff",
+                    "url": "https://api.github.com/repos/boston-digital/drupal-install-profile/zipball/39e21b0ec205b7eb58a0501b9b4c5f517d880ff2",
+                    "reference": "39e21b0ec205b7eb58a0501b9b4c5f517d880ff2",
                     "shasum": ""
                 },
                 "require": {
                     "composer/installers": "^1.9"
                 },
-                "time": "2020-05-06T20:06:40+00:00",
+                "time": "2020-05-06T21:03:56+00:00",
                 "type": "drupal-profile",
                 "extra": {
                     "installer-name": "ignitor"
                 },
+                "license": [
+                    "MIT"
+                ],
                 "description": "Installation profile for all Drupal projects.",
                 "homepage": "https://github.com/boston-digital/drupal-install-profile",
                 "support": {
@@ -359,6 +362,70 @@
                 "homepage": "https://www.github.com/boston-digital/drupal-starter-theme",
                 "support": {
                     "source": "https://github.com/boston-digital/drupal-starter-theme/tree/8.x"
+                }
+            }
+        },
+        "boston-digital/wp-advanced-custom-fields-pro": {
+            "5.8.9": {
+                "name": "boston-digital/wp-advanced-custom-fields-pro",
+                "version": "5.8.9",
+                "version_normalized": "5.8.9.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:boston-digital/wp-advanced-custom-fields-pro.git",
+                    "reference": "917fbe03e9d528aabbd1e8849bfaf7cdeafc94e1"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/boston-digital/wp-advanced-custom-fields-pro/zipball/917fbe03e9d528aabbd1e8849bfaf7cdeafc94e1",
+                    "reference": "917fbe03e9d528aabbd1e8849bfaf7cdeafc94e1",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0"
+                },
+                "time": "2020-05-06T23:58:10+00:00",
+                "type": "wordpress-plugin",
+                "extra": {
+                    "installer-name": "advanced-custom-fields-pro"
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Mirror of Advanced Custom Fields Pro. This repository is managed by a bot.",
+                "support": {
+                    "source": "https://github.com/boston-digital/wp-advanced-custom-fields-pro/tree/v5.8.9"
+                }
+            },
+            "dev-master": {
+                "name": "boston-digital/wp-advanced-custom-fields-pro",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:boston-digital/wp-advanced-custom-fields-pro.git",
+                    "reference": "917fbe03e9d528aabbd1e8849bfaf7cdeafc94e1"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/boston-digital/wp-advanced-custom-fields-pro/zipball/917fbe03e9d528aabbd1e8849bfaf7cdeafc94e1",
+                    "reference": "917fbe03e9d528aabbd1e8849bfaf7cdeafc94e1",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0"
+                },
+                "time": "2020-05-06T23:58:10+00:00",
+                "type": "wordpress-plugin",
+                "extra": {
+                    "installer-name": "advanced-custom-fields-pro"
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Mirror of Advanced Custom Fields Pro. This repository is managed by a bot.",
+                "support": {
+                    "source": "https://github.com/boston-digital/wp-advanced-custom-fields-pro/tree/v5.8.9"
                 }
             }
         },
