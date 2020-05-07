@@ -366,10 +366,10 @@
             }
         },
         "boston-digital/drupal-uikit": {
-            "1.x-dev": {
+            "8.x-dev": {
                 "name": "boston-digital/drupal-uikit",
-                "version": "1.x-dev",
-                "version_normalized": "1.9999999.9999999.9999999-dev",
+                "version": "8.x-dev",
+                "version_normalized": "8.9999999.9999999.9999999-dev",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:boston-digital/drupal-uikit.git",
