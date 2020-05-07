@@ -9,22 +9,27 @@
       "packagist.org": false
     },
     {
+      "name": "boston-digital/bdt",
       "type": "vcs",
       "url": "https://github.com/boston-digital/bdt"
     },
     {
+      "name": "boston-digital/drupal-install-profile",
       "type": "vcs",
       "url": "https://github.com/boston-digital/drupal-install-profile"
     },
     {
+      "name": "boston-digital/drupal-project",
       "type": "vcs",
       "url": "https://github.com/boston-digital/drupal-project"
     },
     {
+      "name": "boston-digital/drupal-starter-theme",
       "type": "vcs",
       "url": "https://github.com/boston-digital/drupal-starter-theme"
     },
     {
+      "name": "boston-digital/wp-advanced-custom-fields-pro",
       "type": "vcs",
       "url": "https://github.com/boston-digital/wp-advanced-custom-fields-pro"
     }
