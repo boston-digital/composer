@@ -41,7 +41,7 @@
     "boston-digital/drupal-install-profile": "*",
     "boston-digital/drupal-project": "*",
     "boston-digital/drupal-starter-theme": "*",
-    "boston-digital/drupal-uikit": "*",
+    "boston-digital/drupal-uikit": ">8",
     "boston-digital/wp-advanced-custom-fields-pro": ">=5.8.9"
   }
 }
