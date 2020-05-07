@@ -373,26 +373,30 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:boston-digital/drupal-uikit.git",
-                    "reference": "fa9628da4708d433ec6e2fbf4d9019046403ae75"
+                    "reference": "e3f1545df375faa945c3a2cf81436ebc97ccbf9c"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/boston-digital/drupal-uikit/zipball/fa9628da4708d433ec6e2fbf4d9019046403ae75",
-                    "reference": "fa9628da4708d433ec6e2fbf4d9019046403ae75",
+                    "url": "https://api.github.com/repos/boston-digital/drupal-uikit/zipball/e3f1545df375faa945c3a2cf81436ebc97ccbf9c",
+                    "reference": "e3f1545df375faa945c3a2cf81436ebc97ccbf9c",
                     "shasum": ""
                 },
                 "require": {
+                    "composer/installers": "^1.9",
                     "drupal/paragraphs": "^1.11"
                 },
-                "time": "2020-05-06T20:00:25+00:00",
+                "time": "2020-05-07T03:41:58+00:00",
                 "type": "drupal-module",
+                "extra": {
+                    "installer-name": "uikit"
+                },
                 "license": [
                     "MIT"
                 ],
                 "description": "UI kit for all Drupal projects that provides useful components that are commonly used.",
                 "homepage": "https://www.github.com/boston-digital/drupal-uikit",
                 "support": {
-                    "source": "https://github.com/boston-digital/drupal-uikit/tree/1.x"
+                    "source": "https://github.com/boston-digital/drupal-uikit/tree/8.x"
                 }
             }
         },
