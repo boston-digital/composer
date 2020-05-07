@@ -365,6 +365,37 @@
                 }
             }
         },
+        "boston-digital/drupal-uikit": {
+            "1.x-dev": {
+                "name": "boston-digital/drupal-uikit",
+                "version": "1.x-dev",
+                "version_normalized": "1.9999999.9999999.9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:boston-digital/drupal-uikit.git",
+                    "reference": "fa9628da4708d433ec6e2fbf4d9019046403ae75"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/boston-digital/drupal-uikit/zipball/fa9628da4708d433ec6e2fbf4d9019046403ae75",
+                    "reference": "fa9628da4708d433ec6e2fbf4d9019046403ae75",
+                    "shasum": ""
+                },
+                "require": {
+                    "drupal/paragraphs": "^1.11"
+                },
+                "time": "2020-05-06T20:00:25+00:00",
+                "type": "drupal-module",
+                "license": [
+                    "MIT"
+                ],
+                "description": "UI kit for all Drupal projects that provides useful components that are commonly used.",
+                "homepage": "https://www.github.com/boston-digital/drupal-uikit",
+                "support": {
+                    "source": "https://github.com/boston-digital/drupal-uikit/tree/1.x"
+                }
+            }
+        },
         "boston-digital/wp-advanced-custom-fields-pro": {
             "5.8.9": {
                 "name": "boston-digital/wp-advanced-custom-fields-pro",
