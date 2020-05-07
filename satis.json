@@ -3,7 +3,7 @@
   "description": "Boston Digital Composer repository",
   "homepage": "https://boston-digital.github.io/composer/",
   "include-filename": "all.json",
-  "require-all": true,
+  "require-all": false,
   "repositories": [
     {
       "name": "boston-digital/bdt",
@@ -30,5 +30,12 @@
       "type": "vcs",
       "url": "https://github.com/boston-digital/wp-advanced-custom-fields-pro"
     }
-  ]
+  ],
+  "require": {
+    "boston-digital/bdt": "*",
+    "boston-digital/drupal-install-profile": "*",
+    "boston-digital/drupal-project": "*",
+    "boston-digital/drupal-starter-theme": "*",
+    "boston-digital/wp-advanced-custom-fields-pro": ">=5.8.9"
+  }
 }
