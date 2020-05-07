@@ -26,6 +26,11 @@
       "url": "https://github.com/boston-digital/drupal-starter-theme"
     },
     {
+      "name": "boston-digital/drupal-uikit",
+      "type": "vcs",
+      "url": "https://github.com/boston-digital/drupal-uikit"
+    },
+    {
       "name": "boston-digital/wp-advanced-custom-fields-pro",
       "type": "vcs",
       "url": "https://github.com/boston-digital/wp-advanced-custom-fields-pro"
@@ -36,6 +41,7 @@
     "boston-digital/drupal-install-profile": "*",
     "boston-digital/drupal-project": "*",
     "boston-digital/drupal-starter-theme": "*",
+    "boston-digital/drupal-uikit": "*",
     "boston-digital/wp-advanced-custom-fields-pro": ">=5.8.9"
   }
 }
