@@ -4,5 +4,6 @@
 
 ##### Ignore generated content #####
 /advanced-custom-fields-pro
-/vendor
 /dist
+/files
+/vendor
