@@ -63,8 +63,8 @@ os ()
 jq_check ()
 {
   if ! command_exists jq; then
-      echo "jq is required, but not installed > https://stedolan.github.io/jq/download/"
-      exit 1
+    echo "jq is required, but not installed > https://stedolan.github.io/jq/download/"
+    exit 1
   fi
 }
 
@@ -85,23 +85,18 @@ unzip_check ()
 dir_exists ()
 {
   local dir="$1"
-
-  if [ -d "$dir" ]; then
-    return 0
-  else
-    return 1
-  fi
+  [ -d "$1" ] && return 0 || return 1
 }
 
 file_exists ()
 {
   local file="$1"
+  [ -f "$file" ] && return 0 || return 1
+}
 
-  if [ -f "$file" ]; then
-    return 0
-  else
-    return 1
-  fi
+is_repo_dirty ()
+{
+  [ -z "$(git status -s)" ] && return 1 || return 0
 }
 
 setup_git_repo ()
@@ -109,6 +104,22 @@ setup_git_repo ()
   if ! dir_exists "$GIT_TARGET_DIR"; then
     echo "Cloning $GIT_URL into $GIT_TARGET_DIR..."
     git clone "$GIT_URL" "$GIT_TARGET_DIR" --quiet
+  else
+    pushd "$GIT_TARGET_DIR" >/dev/null
+
+    if is_repo_dirty; then
+      echo "$GIT_TARGET_DIR is dirty. Cleaning things up..."
+      git reset --hard >/dev/null
+      git clean -fd . >/dev/null
+    fi
+
+    echo "Pulling updates from origin..."
+    # ensure tags are in sync with origin
+    (git tag | xargs git tag -d && git fetch --tags) >/dev/null 2>&1
+    ## pull any other changes
+    git pull >/dev/null
+
+    popd >/dev/null
   fi
 }
 
@@ -140,6 +151,9 @@ create_release ()
     -u ${GITHUB_USER}:${GITHUB_TOKEN} \
     -H "Content-Type: application/json" \
     --data '{"tag_name":"'${tag}'","target_commitish":"master","name":"'${tag}'","body":"'${tag}'","draft":false,"prerelease":false}' \
+    --output /dev/null \
+    --show-error \
+    --fail \
     --silent \
     "https://api.github.com/repos/${GIT_NAME}/releases"
 }
@@ -147,11 +161,7 @@ create_release ()
 git_tag_exists ()
 {
   local tag="$1"
-  if [ $( cd "$GIT_TARGET_DIR" && git tag -l "$tag" ) ]; then
-    return 0
-  else
-    return 1
-  fi
+  [ $( cd "$GIT_TARGET_DIR" && git tag -l "$tag" ) ] && return 0 || return 1
 }
 
 mirror ()
@@ -170,14 +180,13 @@ mirror ()
 
   if ! file_exists "$acf_filepath"; then
     echo "Downloading ACF version $version to $acf_filepath..."
-    curl --output --create-dirs --location --silent "$acf_filepath" "$acf_endpoint"
+    curl --output "$acf_filepath" --create-dirs --location --silent "$acf_endpoint"
 
     if ! file_exists "$acf_filepath"; then
       echo "An error occurred while downloading ACF :("
       exit 1
     fi
   fi
-
 
   echo "Extracting zip file..."
   unzip -qq "$acf_filepath" -d "$FILES_DIR"
@@ -189,7 +198,7 @@ mirror ()
   pushd "$GIT_TARGET_DIR" >/dev/null
   echo "Creating release..."
   create_release "$version"
-  git add . && git commit -m "v${version}" && git tag "v${version}" && git push --follow-tags -u origin master
+  (git add . && git commit -m "v${version}" && git tag "v${version}" && git push --follow-tags -u origin master) >/dev/null 2>&1
   popd >/dev/null
   echo "Cleaning up..."
   rm -rf "$acf_unzip_dir"
