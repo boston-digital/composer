@@ -7,6 +7,9 @@ all: dist/packages.json
 dist/packages.json: dist/.git $(SATIS) Makefile satis.json
 	$(PHP) $(SATIS) build satis.json dist
 
+clean:
+	rm -rf dist
+
 dist/.git:
 	git clone git@github.com:boston-digital/composer.git dist -b gh-pages --depth=1
 
